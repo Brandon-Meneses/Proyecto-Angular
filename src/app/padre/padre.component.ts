@@ -6,7 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./padre.component.css']
 })
 export class PadreComponent {
+
+  mensajeRecibido : string ='';
+
+  recibirMensaje($event: string) {
+    this.mensajeRecibido = $event;
+  }
+
+
+
+  //CONTADOR 
   valorContador: number = 0;
+  mensajePadre="Hola soy el padre";
   incrementar() {
     this.valorContador++;
   }
