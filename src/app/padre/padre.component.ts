@@ -7,14 +7,10 @@ import { Component } from '@angular/core';
 })
 export class PadreComponent {
 
-  mensajeRecibido : string ='';
-
+  mensajeRecibido: string = '';
   recibirMensaje($event: string) {
     this.mensajeRecibido = $event;
   }
-
-
-
   //CONTADOR 
   valorContador: number = 0;
   mensajePadre="Hola soy el padre";
