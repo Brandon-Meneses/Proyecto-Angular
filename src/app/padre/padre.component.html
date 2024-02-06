@@ -1,5 +1,8 @@
 <h1 >{{nombre | miPipePersonalizado}}</h1>
 <h2>Fecha de hoy : {{fecha | date:'dd/MM/yyyy'}}</h2>
+<h2>Cuanto cotiza el dolar : {{dolar | currency}}</h2>
+<h2>El numero Pi es : {{pi | number: '1.2-2'}}</h2>
+<h2>El porcentaje es: {{factor | percent}}</h2>
 <button type="button" (click)="saludar()">Saludar</button>
 <button type="button" (click)="preguntar()">Preguntar por Hijo</button>
 
