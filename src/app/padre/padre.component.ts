@@ -8,13 +8,14 @@ import { ServicioFamiliarService } from '../servicio-familiar.service';
 })
 export class PadreComponent implements OnInit {
   nombre?: string;
+  fecha?: Date= new Date();
   
   constructor(private _servicioFamiliar : ServicioFamiliarService) { 
 
 
   }
   ngOnInit(): void {
-    this._servicioFamiliar.setHermanoGrande('Juan');
+    this._servicioFamiliar.setHermanoGrande('juan');
     this.nombre = this._servicioFamiliar.getHermanoGrande();
   }
   saludar() {
